@@ -49,13 +49,28 @@ var favor = window.prompt("Who is your favorite author? Please enter Churchill, 
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Churchill" button.
-});
+  console.log('This speech was written by ' + churchillSpeech.author + ' in ' + churchillSpeech.year);
+    
+  if(churchillSpeech.yearIsBCE == true) {
+ console.log("This speech took place before the common era.");
+ }else
+ {console.log("This speech took place during the common era.");};
+});   
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Ghandi" button.
+ console.log('This speech was written by ' + ghandiSpeech.author + ' in ' + ghandiSpeech.year);
+    
+ if(ghandiSpeech.yearIsBCE == true) {
+ console.log("This speech took place before the common era.");
+ }else
+ {console.log("This speech took place during the common era.");};
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Demosthenes" button.
+ console.log('This speech was written by ' + demosthenesSpeech.author + ' in ' + demosthenesSpeech.year);
+    
+ if(demosthenesSpeech.yearIsBCE == true) {
+ console.log("This speech took place before the common era.");
+ }else
+ {console.log("This speech took place during the common era.");};
 });
